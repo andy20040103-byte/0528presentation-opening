@@ -1,4 +1,4 @@
-﻿
+
 document.addEventListener("DOMContentLoaded", () => {
   // Intersection Observer for scroll animations
   const observerOptions = {
@@ -31,14 +31,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = document.getElementById("close-modal");
   const modalTitle = document.getElementById("modal-title");
   
-  // You can customize the links for each question here later
-  const dummyLink = "#"; 
+  const projectLinks = {
+    "1": "https://med11089.github.io/0528GroupDiscussion/",
+    "2": "https://wk14q2-interactive-presentation.netlify.app/",
+    "3": "https://claire0706-coder.github.io/sarcoma-q3-web/",
+    "4": "https://andy20040103-byte.github.io/0528presentation/",
+    "7": ""
+  };
 
   document.querySelectorAll(".popup-trigger").forEach(btn => {
     btn.addEventListener("click", (e) => {
       const qNum = e.target.getAttribute("data-question");
       modalTitle.textContent = `問題 ${qNum} - 組員專案連結`;
-      // Here you can change the link dynamically based on qNum
+      
+      const modalBody = document.getElementById("modal-body");
+      const link = projectLinks[qNum];
+      
+      if (link) {
+        modalBody.innerHTML = `
+          <a href="${link}" class="project-link" target="_blank">
+            <div class="link-icon">🔗</div>
+            <div class="link-text">點擊前往：問題 ${qNum} 專屬報告網站</div>
+          </a>
+        `;
+      } else {
+        modalBody.innerHTML = `
+          <div class="project-link" style="cursor: not-allowed; opacity: 0.6; background-color: rgba(255, 255, 255, 0.3);">
+            <div class="link-icon">⏳</div>
+            <div class="link-text">問題 ${qNum} 報告網站尚未建立</div>
+          </div>
+        `;
+      }
+
       modal.classList.add("active");
     });
   });
