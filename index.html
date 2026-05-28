@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myxoid Liposarcoma - 臨床決策探討開場</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Popup Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal">&times;</button>
+      <h2 id="modal-title">組員專案連結</h2>
+      <div id="modal-body" class="modal-links-container">
+        <!-- Links will be injected here -->
+        <a href="#" class="project-link" target="_blank">
+          <div class="link-icon">🔗</div>
+          <div class="link-text">點此前往該主題之專屬互動網站</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-container">
+    
+    <!-- Section 0: Overview Flowchart -->
+    <section class="story-section" id="section-0">
+      <div class="overview-wrapper fade-in">
+        <h2 class="overview-title">全案診療流程概覽</h2>
+        <div class="flowchart-container">
+          <div class="flow-node" data-target="section-1">
+            <div class="flow-dot">1</div>
+            <div class="flow-text">初現端倪<br><span>(下背/大腿痛)</span></div>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node" data-target="section-2">
+            <div class="flow-dot">2</div>
+            <div class="flow-text">發現硬塊<br><span>(9cm 軟組織瘤)</span></div>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node" data-target="section-3">
+            <div class="flow-dot">3</div>
+            <div class="flow-text">影像與切片<br><span>(確診惡性)</span></div>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node" data-target="section-4">
+            <div class="flow-dot">4</div>
+            <div class="flow-text">手術切除<br><span>(MLPS確診)</span></div>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node" data-target="section-5">
+            <div class="flow-dot">5</div>
+            <div class="flow-text">醫病決策<br><span>(未做化療)</span></div>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node" data-target="section-6">
+            <div class="flow-dot">6</div>
+            <div class="flow-text">晚期復發<br><span>(背部轉移)</span></div>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node" data-target="section-7">
+            <div class="flow-dot">7</div>
+            <div class="flow-text">重拾挑戰<br><span>(再次治療/衛教)</span></div>
+          </div>
+        </div>
+        <p class="overview-hint">請向下滾動，我們將為您逐一拆解這 7 個關鍵階段 ▼</p>
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="story-section" id="section-1">
+      <div class="content-wrapper">
+        <div class="story-panel fade-in">
+          <div class="stage-badge">階段一：初露端倪</div>
+          <h2>前情提要</h2>
+          <p>64 歲女性是個設計學系的教授，正準備再工作一年就退休。大概半年多以前，她開始有點慢性下背痛，且常合併左大腿痠痛。</p>
+          <p>她曾到附近醫院骨科就診，X 光發現腰椎四、五節有椎間盤退化合併骨刺。吃藥復健後下背痛改善，但左大腿痠痛仍斷斷續續。因為不影響生活，她並未再理會。</p>
+        </div>
+        <div class="question-panel slide-up">
+          <div class="speaker-tag">主講人：江其叡</div>
+          <h3>問題一</h3>
+          <p class="question-text">下背痛是骨科門診最常見的主述，請問有哪些鑑別診斷？什麼情況下需要安排進一步的檢查？</p>
+          <button class="action-btn popup-trigger" data-question="1">查看組員專案</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="story-section" id="section-2">
+      <div class="content-wrapper">
+        <div class="story-panel fade-in">
+          <div class="stage-badge">階段二：意外發現</div>
+          <h2>前情提要</h2>
+          <p>一年後她退休了，正準備享受人生。但在洗澡時，她發現自己的左大腿似乎較右大腿大了一些，裡面似乎有顆軟軟的、有彈性的物體。</p>
+          <p>她到骨科就診，醫師用超音波一照，發現在肌肉層裡面有一顆 9×7×6 公分大小的軟組織瘤，建議她立刻住院進行進一步檢查。</p>
+        </div>
+        <div class="question-panel slide-up">
+          <div class="speaker-tag">主講人：潘宥豪</div>
+          <h3>問題二</h3>
+          <p class="question-text">肌肉層裡面的軟組織瘤有哪些鑑別診斷？需要安排哪些進一步的檢查？</p>
+          <button class="action-btn popup-trigger" data-question="2">查看組員專案</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="story-section" id="section-3">
+      <div class="content-wrapper">
+        <div class="story-panel fade-in">
+          <div class="stage-badge">階段三：進階檢驗</div>
+          <h2>前情提要</h2>
+          <p>住院後，所有抽血檢查都在正常範圍內。腫瘤分期診斷 (staging work-up) 在其他部位並未發現異常。</p>
+          <p>左下肢 MRI 顯示有一個具同質訊號 (homogeneous signal) 且有 contrast retention 的腫瘤。骨科醫師隔天幫她安排切片檢查。</p>
+        </div>
+        <div class="question-panel slide-up">
+          <div class="speaker-tag">主講人：李昀臻</div>
+          <h3>問題三</h3>
+          <p class="question-text">假如該醫院骨科醫師經驗不多，由他安排切片檢查是否適當？若切片前已跟醫學中心團隊討論過，是否適當？</p>
+          <button class="action-btn popup-trigger" data-question="3">查看組員專案</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="story-section" id="section-4">
+      <div class="content-wrapper">
+        <div class="story-panel fade-in">
+          <div class="stage-badge">階段四：確診與抉擇</div>
+          <h2>前情提要</h2>
+          <p>切片判定為惡性軟組織腫瘤。手術非常成功，腫瘤被完整切除 (margin free, 4mm)。細胞學分期為低惡性度 (Grade 1)。</p>
+          <p>顯微鏡下含有異常的脂肪母細胞、大量 myxoid 組織，以及分支狀的 chicken-wire 血管網絡。</p>
+        </div>
+        <div class="question-panel slide-up">
+          <div class="speaker-tag">主講人：楊諺昕</div>
+          <h3>問題四</h3>
+          <p class="question-text">較有可能的診斷是什麼？後續腫瘤科醫師建議「可化療也可以不用化療」，理由各是什麼？如何完成醫病共享決策 (SDM)？</p>
+          <button class="action-btn popup-trigger" data-question="4">查看組員專案</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="story-section" id="section-5">
+      <div class="content-wrapper">
+        <div class="story-panel fade-in">
+          <div class="stage-badge">階段五：回首過去</div>
+          <h2>前情提要</h2>
+          <p>病人在跟腫瘤科醫師討論過後，因為擔心副作用，決定不要再做化療。後續治療平順，恢復了退休生活。</p>
+          <p>此時她突然想到，算起來她的左大腿痠痛已經超過一年以上，也經過多次的就醫了，為何這麼晚才發現？</p>
+        </div>
+        <div class="question-panel slide-up">
+          <div class="speaker-tag">主講人：楊諺昕 (額外補充)</div>
+          <h3>問題五</h3>
+          <p class="question-text">這樣之前看過她的醫師算是醫療疏失嗎？理由是什麼？如果是你會怎麼跟病人解釋？</p>
+          <!-- 無 popup trigger -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="story-section" id="section-6">
+      <div class="content-wrapper">
+        <div class="story-panel fade-in">
+          <div class="stage-badge">階段六：無聲的轉移</div>
+          <h2>前情提要</h2>
+          <p>手術的五年後，她洗澡時摸到左後背肩胛骨附近有點隆起。一兩個月後隆起越來越明顯。</p>
+          <p>檢查發現是顆 6×3×3cm 的軟組織瘤，緊貼肋骨。切片確診是之前的惡性腫瘤轉移。醫師建議先化療讓腫瘤縮小再手術。</p>
+        </div>
+        <div class="question-panel slide-up">
+          <div class="speaker-tag">主講人：楊諺昕 (額外補充)</div>
+          <h3>問題六</h3>
+          <p class="question-text">第一次術後，醫師說化療可做可不用，但最後的結果卻是轉移。如果是你會怎麼跟病人解釋？</p>
+          <!-- 無 popup trigger -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7 -->
+    <section class="story-section" id="section-7">
+      <div class="content-wrapper">
+        <div class="story-panel fade-in">
+          <div class="stage-badge">階段七：面對新挑戰</div>
+          <h2>前情提要</h2>
+          <p>病人熱愛花藝與社交活動，最近與朋友相約前往日本賞楓。突如其來的轉移讓旅行充滿變數。</p>
+          <p>她決定積極配合治療，但面對即將開始的化療，內心仍充滿不安，擔心副作用影響生活，甚至是否還能完成賞楓之旅。</p>
+        </div>
+        <div class="question-panel slide-up">
+          <div class="speaker-tag">主講人：潘佳璟、林靖傑</div>
+          <h3>問題七</h3>
+          <p class="question-text">病人為第一次進行化療，不太了解副作用和注意事項，請問你會如何跟病人衛教（如何因應副作用、食衣住行注意事項）？</p>
+          <button class="action-btn popup-trigger" data-question="7">查看組員專案</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    ↑ 回到概覽
+  </button>
+  
+  <script src="main.js"></script>
+</body>
+</html>
+
